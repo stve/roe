@@ -1,0 +1,87 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://www.hulu.com:80/api/oembed.json?format=json&url=http://www.hulu.com/watch/240024/family-guy-episode-vi-its-a-trap
+    body: !!null 
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Roe Ruby Gem 0.0.1
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - 200 OK
+      p3p:
+      - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+      x-ua-compatible:
+      - IE=EmulateIE9; IE=EmulateIE7
+      content-length:
+      - '892'
+      cache-control:
+      - max-age=3580
+      date:
+      - Tue, 25 Oct 2011 05:05:40 GMT
+      connection:
+      - keep-alive
+    body: ! '{"thumbnail_height": 80, "type": "video", "title": "Episode VI: It''s
+      a Trap (Family Guy)", "provider_name": "Hulu", "embed_url": "http://www.hulu.com/embed/aEKsCa0CKH1QI798K_-dMA",
+      "height": 296, "provider_url": "http://www.hulu.com/", "width": 512, "html":
+      "\u003cobject width=\"512\" height=\"296\"\u003e\u003cparam name=\"movie\" value=\"http://www.hulu.com/embed/aEKsCa0CKH1QI798K_-dMA\"\u003e\u003c/param\u003e\u003cparam
+      name=\"flashvars\" value=\"ap=1\"\u003e\u003c/param\u003e\u003cembed src=\"http://www.hulu.com/embed/aEKsCa0CKH1QI798K_-dMA\"
+      type=\"application/x-shockwave-flash\" width=\"512\" height=\"296\" flashvars=\"ap=1\"\u003e\u003c/embed\u003e\u003c/object\u003e",
+      "cache_age": 3600, "version": "1.0", "duration": 2622.95, "author_name": "FOX",
+      "air_date": {}, "thumbnail_width": 145, "thumbnail_url": "http://thumbnails.hulu.com/440/50147440/269257_145x80_generated.jpg"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://www.hulu.com:80/api/oembed?format=json&url=http://www.hulu.com/watch/240024/family-guy-episode-vi-its-a-trap
+    body: !!null 
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Roe Ruby Gem 0.0.1
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - 200 OK
+      p3p:
+      - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+      x-ua-compatible:
+      - IE=EmulateIE9; IE=EmulateIE7
+      content-length:
+      - '809'
+      cache-control:
+      - max-age=3600
+      date:
+      - Fri, 04 Nov 2011 04:49:43 GMT
+      connection:
+      - keep-alive
+    body: ! '{"type":"video","provider_name":"Hulu","duration":2622.95,"provider_url":"http://www.hulu.com/","thumbnail_url":"http://thumbnails.hulu.com/440/50147440/269257_145x80_generated.jpg","title":"Episode
+      VI: It''s a Trap (Family Guy)","width":512,"cache_age":3600,"embed_url":"http://www.hulu.com/embed/aEKsCa0CKH1QI798K_-dMA","author_name":"FOX","version":"1.0","air_date":"Sun
+      May 22 00:00:00 UTC 2011","height":296,"thumbnail_width":145,"html":"<object
+      width=\"512\" height=\"296\"><param name=\"movie\" value=\"http://www.hulu.com/embed/aEKsCa0CKH1QI798K_-dMA\"></param><param
+      name=\"flashvars\" value=\"ap=1\"></param><embed src=\"http://www.hulu.com/embed/aEKsCa0CKH1QI798K_-dMA\"
+      type=\"application/x-shockwave-flash\" width=\"512\" height=\"296\" flashvars=\"ap=1\"></embed></object>","thumbnail_height":80}'
+    http_version: '1.1'

@@ -1,0 +1,184 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://vimeo.com:80/api/oembed.json?format=json&url=http://vimeo.com/7100569
+    body: !!null 
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Roe Ruby Gem 0.0.1
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 25 Oct 2011 05:05:39 GMT
+      server:
+      - Apache
+      x-powered-by:
+      - PHP/5.3.5-0.dotdeb.0
+      expires:
+      - Mon, 24 Oct 2011 17:05:39 GMT
+      cache-control:
+      - no-store, no-cache, must-revalidate
+      - post-check=0, pre-check=0
+      vary:
+      - Accept-Encoding
+      content-encoding:
+      - gzip
+      content-length:
+      - '345'
+      content-type:
+      - application/json
+    body: !binary |-
+      H4sIAAAAAAAAA3VQ2WrDMBD8FVXPwUd6pDFpoAf9gUKfBEa2N5FaWTbS2sGU
+      /ntXMiR1oU/SzO7Ozs4Xx6kHXvBRN9DxFR/Bed1ZYvIkI9y7LpRcaWUb+t51
+      G/vO/OAM0QqxL0Qq0jHUk7prRUpdqNGEqScnmyvCckDVnbWepYeJvXRWqgEu
+      1f8V6zDQnPu1L3sz+OCVkMI2zO30wZE8865+EBeV3sgJXPJLLF4s0k2eZbd3
+      W8HZSTeoaCZf32cEFeijQsKbdYBRteoc3UxcYE5QfWp8NKY7vQ7GvNUOwDK5
+      xPudSGdHe/IYV/AibCDDcQEvSH/Fm8FJjMHn+T1B8LXT/czE+NhBW9Ke2BHQ
+      M1TAJCLY0EFWGQ2AG8EnIXU1tJWV2vyNsprvrxs7R4BepOvtjUjJUPzRe52V
+      wV7y0R8XUgvrF3pxRIy01A3BOdXvH6QjkP9gAgAA
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://www.hulu.com:80/api/oembed.json?format=json&url=http://www.hulu.com/watch/20807/late-night-with-conan-obrien-wed-may-21-2008
+    body: !!null 
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Roe Ruby Gem 0.0.1
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - 200 OK
+      p3p:
+      - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+      x-ua-compatible:
+      - IE=EmulateIE9; IE=EmulateIE7
+      content-length:
+      - '921'
+      cache-control:
+      - max-age=3600
+      date:
+      - Tue, 25 Oct 2011 05:05:39 GMT
+      connection:
+      - keep-alive
+    body: ! '{"provider_name": "Hulu", "type": "video", "title": "Wed, May 21, 2008
+      (Late Night with Conan O''Brien)", "provider_url": "http://www.hulu.com/", "air_date":
+      {}, "duration": 2543.98, "height": 296, "cache_age": 3600, "embed_url": "http://www.hulu.com/embed/0-njKp22bl4GivFXH0lh5w",
+      "width": 512, "html": "\u003cobject width=\"512\" height=\"296\"\u003e\u003cparam
+      name=\"movie\" value=\"http://www.hulu.com/embed/0-njKp22bl4GivFXH0lh5w\"\u003e\u003c/param\u003e\u003cparam
+      name=\"flashvars\" value=\"ap=1\"\u003e\u003c/param\u003e\u003cembed src=\"http://www.hulu.com/embed/0-njKp22bl4GivFXH0lh5w\"
+      type=\"application/x-shockwave-flash\" width=\"512\" height=\"296\" flashvars=\"ap=1\"\u003e\u003c/embed\u003e\u003c/object\u003e",
+      "author_name": "NBC", "version": "1.0", "thumbnail_width": 145, "thumbnail_url":
+      "http://thumbnails.hulu.com/8/500/23678_145x80_manicured__SIXr9mO9sUO3dYt+S-XTIw.jpg",
+      "thumbnail_height": 80}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://www.hulu.com:80/api/oembed.xml?format=xml&url=http://www.hulu.com/watch/20807/late-night-with-conan-obrien-wed-may-21-2008
+    body: !!null 
+    headers:
+      accept:
+      - application/xml
+      user-agent:
+      - Roe Ruby Gem 0.0.1
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      content-type:
+      - application/xml; charset=utf-8
+      status:
+      - 200 OK
+      p3p:
+      - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+      x-ua-compatible:
+      - IE=EmulateIE9; IE=EmulateIE7
+      ntcoent-length:
+      - '1110'
+      vary:
+      - Accept-Encoding
+      cache-control:
+      - max-age=3600
+      date:
+      - Tue, 25 Oct 2011 05:05:40 GMT
+      content-length:
+      - '1110'
+      connection:
+      - keep-alive
+    body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<oembed>\n  <type>video</type>\n
+      \ <thumbnail_height>80</thumbnail_height>\n  <title>Wed, May 21, 2008 (Late
+      Night with Conan O'Brien)</title>\n  <embed_url>http://www.hulu.com/embed/0-njKp22bl4GivFXH0lh5w</embed_url>\n
+      \ <provider_name>Hulu</provider_name>\n  <height>296</height>\n  <width>512</width>\n
+      \ <html>&lt;object width=\"512\" height=\"296\"&gt;&lt;param name=\"movie\"
+      value=\"http://www.hulu.com/embed/0-njKp22bl4GivFXH0lh5w\"&gt;&lt;/param&gt;&lt;param
+      name=\"flashvars\" value=\"ap=1\"&gt;&lt;/param&gt;&lt;embed src=\"http://www.hulu.com/embed/0-njKp22bl4GivFXH0lh5w\"
+      type=\"application/x-shockwave-flash\" width=\"512\" height=\"296\" flashvars=\"ap=1\"&gt;&lt;/embed&gt;&lt;/object&gt;</html>\n
+      \ <provider_url>http://www.hulu.com/</provider_url>\n  <version>1.0</version>\n
+      \ <cache_age>3600</cache_age>\n  <thumbnail_url>http://thumbnails.hulu.com/8/500/23678_145x80_manicured__SIXr9mO9sUO3dYt+S-XTIw.jpg</thumbnail_url>\n
+      \ <duration>2543.98</duration>\n  <author_name>NBC</author_name>\n  <air_date>Wed
+      May 21 00:00:00 UTC 2008</air_date>\n  <thumbnail_width>145</thumbnail_width>\n</oembed>\n"
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://vimeo.com:80/api/oembed.json?format=json&url=123
+    body: !!null 
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Roe Ruby Gem 0.0.1
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 404
+      message: Not Found
+    headers:
+      date:
+      - Sun, 30 Oct 2011 19:29:12 GMT
+      server:
+      - Apache
+      x-powered-by:
+      - PHP/5.3.5-0.dotdeb.0
+      expires:
+      - Sun, 30 Oct 2011 07:29:12 GMT
+      cache-control:
+      - no-store, no-cache, must-revalidate
+      - post-check=0, pre-check=0
+      vary:
+      - Accept-Encoding
+      content-encoding:
+      - gzip
+      content-length:
+      - '33'
+      content-type:
+      - text/html; charset=UTF-8
+    body: !binary |-
+      H4sIAAAAAAAAAzMxMFHwyy9RcMsvzUsBAJJUDlwNAAAA
+    http_version: '1.1'
