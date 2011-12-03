@@ -1,15 +1,17 @@
-Roe
-===
+# Roe
 
 Roe is a ruby oEmbed client.
 
-Installation
-------------
+## Installation
 
     (sudo) gem install roe
 
-Usage
------
+
+## Documentation
+
+[http://rdoc.info/gems/yql-query](http://rdoc.info/gems/roe)
+
+## Usage
 
 Roe exposes a method `resolve` for accessing oEmbed data:
 
@@ -36,8 +38,7 @@ Roe.configure do |config|
 end
 ```
 
-Supported Providers
--------------------
+## Supported Providers
 
   * YouTube
   * Flickr
@@ -50,14 +51,22 @@ Supported Providers
   * Skitch
   * Instagram
 
-TODO
-----
+## <a name="ci"></a>Build Status
+[![Build Status](https://secure.travis-ci.org/spagalloco/roe.png)][ci]
+
+[ci]: http://travis-ci.org/spagalloco/roe
+
+## <a name="dependencies"></a>Dependency Status
+[![Dependency Status](https://gemnasium.com/spagalloco/roe.png)][gemnasium]
+
+[gemnasium]: https://gemnasium.com/spagalloco/roe
+
+## TODO
 
 * add the ability to dynamically add new services
 * support for more providers
 
-Note on Patches/Pull Requests
------------------------------
+## Contributing
 
 * Fork the project.
 * Make your feature addition or bug fix.
@@ -67,7 +76,6 @@ Note on Patches/Pull Requests
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-Copyright
----------
+## Copyright
 
 Copyright (c) 2011 Steve Agalloco. See LICENSE for details.
